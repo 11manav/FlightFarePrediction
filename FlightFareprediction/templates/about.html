@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>About Us Section</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="{{ url_for('static', filename='css/about.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>	
+<body>
+    <header>
+        <a href="/" class="logo">Flight</a>
+        <div class = "group">
+         <ul class = "navigation">
+             <li><a href="/">Home</a></li>
+             <li><a href="/predict">Fare</a></li>
+             <li><a href="/about">About</a></li>
+             <li><a href="#">Contact</a></li>
+         </ul>
+
+     </div>
+    </header>
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1>About Us</h1>
+				</div>
+				<div class="content">
+					<h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<div class="button">
+						<a href="/">Back Home</a>
+					</div>
+				</div>
+				<div class="social">
+					<a href="https://www.linkedin.com/in/manav-bhangale-23705a1b0/"><i class="fab fa-linkedin"></i></a>
+					<a href="https://www.instagram.com/11manav/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/11manav"><i class="fab fa-github"></i></a>
+				</div>
+			</div>
+			<div class="image-section">
+				<img src="{{url_for('static', filename='images/new.png')}}"  >
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+</html>
